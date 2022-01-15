@@ -1,43 +1,89 @@
+
 a{
   text-decoration: none;
   color: white;
 }
 
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bandInfo{
+  text-align: justify;
+  padding-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bandNaziv{
+  padding-top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bandSlika{
+  width: 100%;
+  margin-bottom: 18px;
+
+}
+
+.bandSlikaModal{
+  width: 100%;
+  height: 100px;  
+}
+
+.readMore{
+  margin-top: 8px;
+}
+
+.App{
+}
+
+.bandList{
+  padding-bottom: 40px;
+}
+
+.footer{
+  background-color: black;
   color: white;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.brandName{
+  padding: 20px 60px;
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card{
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 480px) {
+  
+.brandName{
+  padding: 10px 25px;
+  font-size: 1.6em;
+}
+
+.bandSlika{
+  margin-bottom: 0px;
+}
+
+.bandSlikaModal{
+  width: 100%;
+  height: 60px;
+}
+
+.bandInfo{
+  padding: 15px;
+  font-size: .9em;
+}
+
+.footer{
+  height: 35px;
+}
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .bandInfo{
+    font-size: .7em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }

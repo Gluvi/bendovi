@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import BandsList from './components/BandsList';
 import ModalDialog from './components/Modal';
+import Footer from './components/Footer';
 
 import './App.css';
 class App extends React.Component {
@@ -38,10 +39,11 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className='App'>
         <Navbar />
         <BandsList bands={this.state.bands} changeCurrentBand={this.changeCurrentBand} />
         <ModalDialog show={this.state.show} currentBand={this.state.currentBand} handleClose={this.handleClose} />
+        <Footer />
       </div>
       )
     };

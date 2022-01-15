@@ -11,21 +11,21 @@ const ModalDialog = ({currentBand, show, handleClose}) => {
         <Modal.Body>
             <div className='row'>
                 <div className='col-4'>
-                    <img src={currentBand.thumb1} alt={currentBand.name} height='100px' width='150px' />
+                    <img src={currentBand.thumb1} alt={currentBand.name} className='bandSlikaModal' />
                 </div>
                 <div className='col-4'>
-                    <img src={currentBand.thumb2} alt={currentBand.name} height='100px' width='150px' />
+                    <img src={currentBand.thumb2} alt={currentBand.name} className='bandSlikaModal' />
                 </div>
                 <div className='col-4'>
-                    <img src={currentBand.thumb3} alt={currentBand.name} height='100px' width='150px' />
+                    <img src={currentBand.thumb3} alt={currentBand.name} className='bandSlikaModal' />
                 </div>
             </div>
             <div className='row' style={{paddingTop: '20px'}}>
-                <p>{currentBand.info}</p>
+                <p className='bandInfo'>{currentBand.info}</p>
             </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" className='btn btn-success' onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>
